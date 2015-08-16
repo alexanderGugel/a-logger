@@ -1,0 +1,30 @@
+{
+  "name": "a-logger",
+  "version": "0.0.1",
+  "description": "A logger.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "author": "Alexander Gugel <alexander.gugel@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^5.1.0"
+  },
+  "keywords": [
+    "logger",
+    "log",
+    "simple"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderGugel/a-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexanderGugel/a-logger/issues"
+  },
+  "homepage": "https://github.com/alexanderGugel/a-logger#readme"
+}
