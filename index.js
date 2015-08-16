@@ -22,10 +22,14 @@ for (var level in LEVELS)
 function log (name, color, fn, msg) {
   var date = new Date()
 
-  fn(
-    chalk.underline[color](name) + pad(name, 5),
-    chalk.gray(date.toLocaleTimeString()),
-    msg
+  fn.apply(
+    null,
+    [
+      chalk.underline[color](name) + pad(name, 5),
+      chalk.gray(date.toLocaleTimeString())
+    ].concat(
+      Array.prototype.slice.call(arguments, 3)
+    )
   )
 }
 
